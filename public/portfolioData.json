@@ -3,5 +3,19 @@
     "main":{
         "title":"John Doe",
         "subtitle":"Junior Developper"
-    }
+    },
+    "projects":[
+        {
+            "title": "Project 1",
+            "subtitle": "A software development project",
+            "smallDescription": "Small description of the project",
+            "imageUrl":"/background.jpg"
+        },
+        {
+            "title": "Project 2",
+            "subtitle": "A software development project",
+            "smallDescription": "Small description of the project",
+            "imageUrl":"https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+        }
+    ]
 }

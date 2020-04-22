@@ -7,6 +7,7 @@
       <v-row justify="center">
         <div class="subtitle">{{subtitle}}</div>
       </v-row>
+      <!--TODO Add links !-->
     </v-container>
   </div>
 </template>
