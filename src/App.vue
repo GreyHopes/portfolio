@@ -47,7 +47,9 @@
       clipped-left
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-toolbar-title>Application</v-toolbar-title>
+      <router-link :to="{path: '/'}">
+        <v-toolbar-title>{{title}}</v-toolbar-title>
+      </router-link>
     </v-app-bar>
 
     <v-content>
@@ -67,26 +69,34 @@
       source: String,
       test:String
     },
-    methods: {
-      retrieveData: function(){
-      this.axios.get('/portfolioData.json')
-      .then(function(response)
-      {
-        console.log(response)
-      })
-      .catch(function(error){
-        console.log(error)
-      })
-      }
-    },
     data: () => ({
       drawer: null,
+      title: "temp"
     }),
     created () {
       this.$vuetify.theme.dark = true;
       this.drawer = false;
-
-      this.retrieveData();
+        this.$store.subscribe((mutation,state) => {
+      if(mutation.type === "setdata")
+      {
+        this.title = state.portfolio.title;
+      }
+    },this);
     },
+    computed: {
+      portfolioData () {
+        return this.$store.state.portfolioData
+      }
+  }
   }
 </script>
+
+<style lang="scss">
+.v-toolbar__content
+{
+  .router-link-active{
+    text-decoration: none;
+    color:white
+  }
+}
+</style>
