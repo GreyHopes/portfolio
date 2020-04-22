@@ -1,28 +1,92 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app id="inspire">
+    <v-navigation-drawer
+      v-model="drawer"
+      app
+      clipped
+      temporary
+    >
+      <v-list dense>
+        <v-list-item link :to="{path: '/'}">
+          <v-list-item-action>
+            <v-icon>mdi-home</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Home</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item link :to="{path: '/about'}">
+          <v-list-item-action>
+            <v-icon>mdi-face</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>About</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item link :to="{path: '/projects'}">
+          <v-list-item-action>
+            <v-icon>mdi-book</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Projects</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item link :to="{path: '/resume'}">
+          <v-list-item-action>
+            <v-icon>mdi-archive</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Resume</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+
+    <v-app-bar
+      app
+      clipped-left
+    >
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
+      <v-toolbar-title>Application</v-toolbar-title>
+    </v-app-bar>
+
+    <v-content>
+      <router-view></router-view>
+    </v-content>
+
+    <v-footer app>
+      <span>&copy; 2019</span>
+    </v-footer>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  export default {
+    props: {
+      source: String,
+      test:String
+    },
+    methods: {
+      retrieveData: function(){
+      this.axios.get('/portfolioData.json')
+      .then(function(response)
+      {
+        console.log(response)
+      })
+      .catch(function(error){
+        console.log(error)
+      })
+      }
+    },
+    data: () => ({
+      drawer: null,
+    }),
+    created () {
+      this.$vuetify.theme.dark = true;
+      this.drawer = false;
+
+      this.retrieveData();
+    },
   }
-}
 </script>
-
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
