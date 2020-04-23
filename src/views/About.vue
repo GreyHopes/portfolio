@@ -1,12 +1,16 @@
 <template>
   <div class="about">
     <v-container class="about-container">
+
       <v-row justify="center">
+
         <v-col cols="12" md="3">
           <v-img class="profile-pic" max-width="20rem" :src="getImageURL(profilePicUrl)"></v-img>
         </v-col>
+
         <v-col cols="12" md="9" align-self="center">
           <v-container>
+
             <v-row class="title">About Me :</v-row>
             <v-row class="description"><VueShowdown :markdown="description"></VueShowdown></v-row>
             <v-row class="">
@@ -25,10 +29,11 @@
                   </v-btn>
                 </v-col>
               </v-row>
+              
           </v-container> 
         </v-col>
+
       </v-row>
-      <!--TODO Add links !-->
     </v-container>
   </div>
 </template>

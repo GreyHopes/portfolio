@@ -3,16 +3,18 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
+//Vuex Store
 export default new Vuex.Store({
   state: {
-    portfolio:null
+    portfolio:null,
+    projects:null
   },
   mutations: {
-    setportfoliodata(state,data)
+    setportfoliodata(state,data) //Called when the portfolio data is loaded 
     {
       state.portfolio = data;
     },
-    setprojects(state,data){
+    setprojects(state,data){ //Called when the projects data is loaded 
       state.projects = data;
     }
   },

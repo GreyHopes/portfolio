@@ -1,17 +1,22 @@
+<!-- Home Component --> 
 <template>
   <div class="home" :style="bgStyle">
     <v-container class="home-container">
+
       <v-row justify="center">
         <div class="title">{{title}}</div>
       </v-row>
+
       <v-row justify="center">
         <div class="subtitle">{{subtitle}}</div>
       </v-row>
+
       <v-row justify="center">
         <v-btn v-for="(item,index) in socials" :key="index" :href="item.url" icon class="social-button">
           <v-icon class="social-icon" large>mdi-{{item.name}}</v-icon>
         </v-btn>
       </v-row>
+
     </v-container>
   </div>
 </template>
@@ -59,8 +64,6 @@ export default {
 
   height:100%;
   position: relative;
-
-  //TODO Add breakpoints for responsive font-size
 
   .title
   {

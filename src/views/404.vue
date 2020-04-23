@@ -1,3 +1,4 @@
+<!-- 404 component -->
 <template>
   <div class="not-found" :style="bgStyle">
     <v-container class="not-found-container">
@@ -28,8 +29,6 @@ export default {
 
   height:100%;
   position: relative;
-
-  //TODO Add breakpoints for responsive font-size
 
   .title
   {

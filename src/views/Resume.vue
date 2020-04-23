@@ -1,27 +1,33 @@
+<!-- Resume component -->
 <template>
   <div class="resume">
     <v-container>
+      
       <v-row justify="center" justify-md="start" class="title">
         <h1>My Resume</h1>
       </v-row>
+
       <v-row class="section">
         <v-col cols="12" md="3" class="section-title"><span><v-icon>mdi-school</v-icon> Education</span></v-col>
         <v-col cols="12" md="9">
           <ResumeItem v-for="(item,index) in education" :key="index" :item="item" type="education"></ResumeItem>
         </v-col>
       </v-row>
+
       <v-row class="section">
         <v-col cols="12" md="3" class="section-title"><span><v-icon>mdi-briefcase</v-icon> Work</span></v-col>
         <v-col cols="12" md="9">
           <ResumeItem v-for="(item,index) in works" :key="index" :item="item" type="work"></ResumeItem>
         </v-col>
       </v-row>
+
       <v-row class="section">
         <v-col cols="12" md="3" class="section-title"><span><v-icon>mdi-laptop</v-icon> Skills</span></v-col>
         <v-col cols="12" md="9">
           <Skill v-for="(item,index) in skills" :key="index" :skill="item"></Skill>
         </v-col>
       </v-row>
+
     </v-container>
   </div>
 </template>

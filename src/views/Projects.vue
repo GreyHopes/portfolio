@@ -1,17 +1,22 @@
+<!-- Projects component -->
 <template>
   <div class="projects">
     <v-container>
+      
       <v-row class="title-row">
         <h1>Check out my projects</h1>
       </v-row>
+
       <v-row>
         <v-col lg="3" md="4" sm="12" v-for="(project,index) in projects" :key="project.title">
           <router-link :to="{path: '/project/'+index}">
             <v-card height="100%">
+
               <v-img
                 :src="getImageURL(project.imageUrl)"
                 height="200px"
               ></v-img>
+
               <v-card-title>
                 {{project.title}}
               </v-card-title>
@@ -22,12 +27,11 @@
 
               <v-card-text>
               </v-card-text>
-            
-            
             </v-card>
           </router-link>
         </v-col>
       </v-row>
+
     </v-container>
   </div>
 </template>
