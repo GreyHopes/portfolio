@@ -21,28 +21,24 @@ Vue.use(VueRouter)
   {
     path: '/projects',
     name: 'Projects',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "projects" */ '../views/Projects.vue')
   },
   {
     path: '/resume',
     name: 'Resume',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "resume" */ '../views/Resume.vue')
   },
   {
     path: '/project/:projectId',
     name: 'Project',
     props:true,
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "projectpage" */ '../views/ProjectPage.vue')
-    
+  },
+  {
+    // will match everything
+    path: '/404',
+    name:"404",
+    component: () => import(/* webpackChunkName: "resume" */ '../views/404.vue')
   }
 ]
 

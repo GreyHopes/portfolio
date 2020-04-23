@@ -62,18 +62,32 @@ export default {
         },
         retrieveProject(projectId)
         {
-            if(this.$store.state.projects && this.$store.state.projects.length > projectId)
+            if(this.$store.state.projects)
             {
-                this.project = this.$store.state.projects[this.projectId]
-                this.retrieveData();
+                if(this.$store.state.projects.length <= projectId)
+                {
+                    this.$router.push({name:"404"});
+                }
+                else
+                {
+                    this.project = this.$store.state.projects[this.projectId]
+                    this.retrieveData();
+                }
             }
             else
             {
                 this.$store.subscribe((mutation,state) => {
                     if(mutation.type === "setprojects" && state.projects.length > projectId)
                     {
-                        this.project = state.projects[projectId];
-                        this.retrieveData();
+                        if(this.$store.state.projects.length <= projectId)
+                        {
+                            this.$router.push({name:"404"});
+                        }
+                        else
+                        {
+                            this.project = state.projects[projectId];
+                            this.retrieveData();
+                        }
                     }
                 },this,projectId)
             }
