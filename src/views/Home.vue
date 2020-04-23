@@ -12,7 +12,6 @@
           <v-icon class="social-icon" large>mdi-{{item.name}}</v-icon>
         </v-btn>
       </v-row>
-      <!--TODO Add links !-->
     </v-container>
   </div>
 </template>
