@@ -42,5 +42,14 @@ export default {
     }
    
     margin-bottom: 1rem;
+
+    @media(max-width: 992px)
+    {
+        .row
+        {
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+        }
+    }
 }
 </style>

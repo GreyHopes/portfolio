@@ -1,13 +1,13 @@
 <template>
   <div class="projects">
     <v-container>
-      <v-row>
+      <v-row class="title-row">
         <h1>Check out my projects</h1>
       </v-row>
       <v-row>
         <v-col lg="3" md="4" sm="12" v-for="(project,index) in projects" :key="project.title">
           <router-link :to="{path: '/project/'+index}">
-            <v-card>
+            <v-card height="100%">
               <v-img
                 :src="getImageURL(project.imageUrl)"
                 height="200px"
@@ -70,9 +70,15 @@ export default {
 <style lang="scss">
 .projects
 {
+  .title-row
+  {
+    margin:0;
+  }
+
   a{
     text-decoration: none;
     color:white
   }
+  margin-bottom: 1rem;
 }
 </style>

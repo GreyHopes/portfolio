@@ -1,8 +1,8 @@
 <template>
-  <div class="Resume">
+  <div class="resume">
     <v-container>
-      <v-row>
-        <v-col cols="12"><h1>My Resume</h1></v-col>
+      <v-row justify="center" justify-md="start" class="title">
+        <h1>My Resume</h1>
       </v-row>
       <v-row class="section">
         <v-col cols="12" md="3" class="section-title"><span><v-icon>mdi-school</v-icon> Education</span></v-col>
@@ -68,6 +68,18 @@ export default {
 </script>
 
 <style lang="scss">
+.resume
+{
+  @media(min-width: 993px)
+  {
+      .title
+      {
+        margin-left: 0;
+        margin-right: 0;
+      }
+  }
+}
+
 .section-title
 {
   font-size:2rem;

@@ -5,7 +5,7 @@
             <span>{{position}}</span>
             <span>{{" • " + dates}}</span>
         </v-row>
-        <v-row v-if="description.length > 0" class="description"><VueShowdown :markdown="description"></VueShowdown></v-row>
+        <v-row v-if="description.length > 0" class="description" justify="center"><VueShowdown :markdown="description"></VueShowdown></v-row>
     </div>
 </template>
 
@@ -47,6 +47,8 @@ export default {
 <style lang="scss">
 .resume-item
 {
+    margin-bottom: 2rem;
+
     .name
     {
         font-weight: bold;
@@ -65,11 +67,12 @@ export default {
             text-align: center;
             justify-content: center;
         }
+
+         .description
+        {
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+        }
     }
-   
-   .details,.description
-   {
-       margin-bottom: 2rem;
-   }
 }
 </style>
