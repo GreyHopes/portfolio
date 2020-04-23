@@ -5,23 +5,27 @@
         <h1>Check out my projects</h1>
       </v-row>
       <v-row>
-        <v-col lg="3" md="4" sm="12" v-for="project in projects" :key="project.title">
-          <v-card>
-            <v-img
-              :src="getImageURL(project.imageUrl)"
-              height="200px"
-            ></v-img>
-            <v-card-title>
-              {{project.title}}
-            </v-card-title>
-        
-            <v-card-subtitle>
-              {{project.subtitle}}
-            </v-card-subtitle>
+        <v-col lg="3" md="4" sm="12" v-for="(project,index) in projects" :key="project.title">
+          <router-link :to="{path: '/project/'+index}">
+            <v-card>
+              <v-img
+                :src="getImageURL(project.imageUrl)"
+                height="200px"
+              ></v-img>
+              <v-card-title>
+                {{project.title}}
+              </v-card-title>
+          
+              <v-card-subtitle>
+                {{project.subtitle}}
+              </v-card-subtitle>
 
-            <v-card-text>
-            </v-card-text>
-          </v-card>
+              <v-card-text>
+              </v-card-text>
+            
+            
+            </v-card>
+          </router-link>
         </v-col>
       </v-row>
     </v-container>
@@ -52,7 +56,7 @@ export default {
     else
     {
       this.$store.subscribe((mutation,state) => {
-        if(mutation.type === "setdata")
+        if(mutation.type === "setportfoliodata")
         {
           this.retrieveDataFromState(state);
         }
@@ -61,3 +65,14 @@ export default {
   },
 }
 </script>
+
+
+<style lang="scss">
+.projects
+{
+  a{
+    text-decoration: none;
+    color:white
+  }
+}
+</style>

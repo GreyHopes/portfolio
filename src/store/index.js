@@ -8,9 +8,12 @@ export default new Vuex.Store({
     portfolio:null
   },
   mutations: {
-    setdata(state,data)
+    setportfoliodata(state,data)
     {
       state.portfolio = data;
+    },
+    setprojects(state,data){
+      state.projects = data;
     }
   },
   actions: {

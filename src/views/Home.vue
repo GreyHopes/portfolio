@@ -35,7 +35,7 @@ export default {
     else
     {
       this.$store.subscribe((mutation,state) => {
-        if(mutation.type === "setdata")
+        if(mutation.type === "setportfoliodata")
         {
           this.retrieveDataFromState(state);
         }

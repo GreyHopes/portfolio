@@ -9,13 +9,19 @@
             "title": "Project 1",
             "subtitle": "A software development project",
             "smallDescription": "Small description of the project",
-            "imageUrl":"/background.jpg"
+            "imageUrl":"/background.jpg",
+            "content":{
+                "mdUrl":"project1.md"
+            }
         },
         {
             "title": "Project 2",
             "subtitle": "A software development project",
             "smallDescription": "Small description of the project",
-            "imageUrl":"https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+            "imageUrl":"https://cdn.vuetifyjs.com/images/cards/sunshine.jpg",
+            "content":{
+                "text":"This is my project"
+            }
         }
     ]
 }

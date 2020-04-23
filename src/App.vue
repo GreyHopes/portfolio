@@ -71,13 +71,13 @@
     },
     data: () => ({
       drawer: null,
-      title: "temp"
+      title: ""
     }),
     created () {
       this.$vuetify.theme.dark = true;
       this.drawer = false;
         this.$store.subscribe((mutation,state) => {
-      if(mutation.type === "setdata")
+      if(mutation.type === "setportfoliodata")
       {
         this.title = state.portfolio.title;
       }
