@@ -1,8 +1,47 @@
 {
     "title":"My portfolio",
+    "name":"John Doe",
+    "resumeUrl":"https://greyhopes.github.io/portfolio/resume.pdf",
+    "footer":"© 2020 Cellard Fabien",
     "main":{
         "title":"John Doe",
-        "subtitle":"Junior Developper"
+        "subtitle":"Junior Developper",
+        "bgUrl":"/background.jpg"
+    },
+    "socials":
+    [{
+        "name":"facebook",
+        "url":"http://facebook.com/tim.baker.906"
+      },
+      {
+        "name":"twitter",
+        "url":"http://twitter.com"
+      },
+      {
+        "name":"linkedin",
+        "url":"https://www.linkedin.com/in/tim-baker-8420009a/"
+      },
+      {
+        "name":"github",
+        "url":"http://github.com/tbakerx"
+      },
+      {
+        "name":"web",
+        "url":"http://github.com/tbakerx"
+      }
+    ],
+    "about":{
+        "profilePic":"/profilepic.png",
+        "description":"Write a description about yourself. Your can write it in **Markdown**.",
+        "email": "fabien.cellard@gmail.com",
+        "phoneNumber": "418-376-8961",
+        "address":{
+            "street":"78-106 rue Dubé",
+            "city":"Chicoutimi",
+            "state":"QC",
+            "country":"CANADA",
+            "zip": "G7H2V2"
+          }
     },
     "projects":[
         {

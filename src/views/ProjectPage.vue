@@ -36,7 +36,8 @@ export default {
         getImageURL,
         onSuccess(response){
             this.isMarkdown = true;
-            this.content = response.data;
+
+            this.content = response.data.replace("{{LOCAL_IMAGE_DIR}}",process.env.BASE_URL+'images');
         },
         // eslint-disable-next-line no-unused-vars
         onFail(error){
@@ -46,7 +47,7 @@ export default {
         {
             if(this.project.content.mdUrl)
             {
-                this.axios.get("/projects/markdown/"+this.project.content.mdUrl)
+                this.axios.get(process.env.BASE_URL+"projects/markdown/"+this.project.content.mdUrl)
                 .then(this.onSuccess)
                 .catch(this.onFail)
             }

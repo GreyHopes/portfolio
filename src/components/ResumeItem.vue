@@ -5,7 +5,7 @@
             <span>{{position}}</span>
             <span>{{" • " + dates}}</span>
         </v-row>
-        <v-row v-if="description.length > 0" class="description">{{description}}</v-row>
+        <v-row v-if="description.length > 0" class="description"><VueShowdown :markdown="description"></VueShowdown></v-row>
     </div>
 </template>
 

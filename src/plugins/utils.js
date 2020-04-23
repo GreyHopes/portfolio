@@ -9,7 +9,7 @@ function getImageURL(url)
 {
     if(!url)
     {
-        return "/images/backgroun.jpg"
+        return process.env.BASE_URL+"images/background.jpg"
     }
 
     if(isExternalURL(url))
@@ -18,7 +18,7 @@ function getImageURL(url)
     }
     else
     {
-        return "/images"+url;
+        return process.env.BASE_URL+"images"+url;
     }
 }
 

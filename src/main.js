@@ -28,7 +28,7 @@ new Vue({
   render: h => h(App)
 }).$mount('#app')
 
-axios.get('/portfolioData.json')
+axios.get(process.env.BASE_URL+'portfolioData.json')
 .then(function(response)
 {
   store.commit('setportfoliodata',response.data)
@@ -37,5 +37,7 @@ axios.get('/portfolioData.json')
 .catch(function(error){
   console.log(error)
 })
+
+
 
 
