@@ -1,46 +1,34 @@
 {
-    "title":"My portfolio",
-    "name":"John Doe",
+    "title":"Portfolio",
+    "name":"Fabien Cellard",
     "resumeUrl":"https://greyhopes.github.io/portfolio/resume.pdf",
     "footer":"© 2020 Cellard Fabien",
     "profilePic":"/profilepic.png",
     "main":{
-        "title":"John Doe",
-        "subtitle":"Junior Developper",
+        "title":"Fabien Cellard",
+        "subtitle":"I'm a junior developper. ",
         "bgUrl":"/background.jpg"
     },
     "socials":
     [{
-        "name":"facebook",
-        "url":"http://facebook.com/"
-      },
-      {
-        "name":"twitter",
-        "url":"http://twitter.com"
-      },
-      {
-        "name":"linkedin",
-        "url":"https://www.linkedin.com/"
-      },
-      {
         "name":"github",
-        "url":"http://github.com/"
+        "url":"http://github.com/GreyHopes"
       },
       {
         "name":"web",
-        "url":"http://github.com/"
+        "url":"https://greyhopes.github.io/portfolio"
       }
     ],
     "about":{
-        "description":"Write a description about yourself. Your can write it in **Markdown**.",
-        "email": "john.doe@example.com",
-        "phoneNumber": "000-000-0000",
+        "description":"Hi! I'm a french developer from Lyon. I'm currently doing a masters degree in Computer Science at UQAC (Chicoutmi QC, Canada) specialized in video games in patnership with Polytech Lyon.",
+        "email": "fabien.cellard@gmail.com",
+        "phoneNumber": "418-376-8961",
         "address":{
-            "street":"555 Boulevard de l'Université,",
+            "street":"78-106 rue Dubé,",
             "city":"Chicoutimi",
             "state":"QC",
             "country":"CANADA",
-            "zip": "G7H2B1"
+            "zip": "G7H2V2"
           }
     },
     "projects":[
@@ -66,30 +54,30 @@
     "resume":{
         "education":[
             {
-              "school":"University X",
-              "degree":"Master Degree",
+              "school":"Université du Québec à Chicoutimi",
+              "degree":"Computer Science Master - Video Games specialization",
               "dates":"September 2019 - Today",
               "description":""
             },
             {
-              "school":"School Y",
-              "degree":"Bachelor Degree",
+              "school":"Polytech Lyon",
+              "degree":"Computer Science Engineering Degree",
               "dates":"September 2015 - August 2019",
               "description":""
             }
         ],
         "works":[
             {
-                "company":"Company",
-                "title":"Developper",
+                "company":"Travelys / SpeedMedia",
+                "title":"Intern Fullstack Developper",
                 "dates":"September 2018 - February 2019",
-                "description":"What I did at this company."
+                "description":"During my internship I worked on the maintenance of Travelys' website. I also worked on different internal projects and Promovol's first website."
             }
         ],
         "skills":[
             {
               "name":"Unreal Engine",
-              "level":"80%",
+              "level":"65%",
               "icon":"unreal"
             },
             {
@@ -99,13 +87,18 @@
             },
             {
               "name":"",
-              "level":"70%",
+              "level":"75%",
               "icon":"language-cpp"
             },
             {
               "name":"",
-              "level":"70%",
+              "level":"75%",
               "icon":"language-csharp"
+            },
+            {
+              "name":"Android",
+              "level":"60%",
+              "icon":"android"
             }
         ]
     }
