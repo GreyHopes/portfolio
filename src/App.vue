@@ -3,16 +3,21 @@
   <v-app id="inspire">
     <!-- The nav drawer -->
     <v-navigation-drawer
-      v-model="drawer"
-      app
+      :value="isLargeViewport || drawer"
       clipped
-      temporary
+      app 
+      bottom
+      :mini-variant="mini"
+      :expand-on-hover="mini"
+      @input="onTransitioned()"
     >
       <v-list dense>
-
-        <v-list-item>
-          <v-list-item-content>
-            <v-list-item-title class="name">{{name}}</v-list-item-title>
+        <v-list-item :class="!drawer && 'px-0'">
+          <v-list-item-avatar :class="mini && 'miniAvatar'">
+            <img :src="getImageURL(profilePic)">
+          </v-list-item-avatar>
+          <v-list-item-content :class="mini && 'miniAvatarText'">
+            <v-list-item-title class="">{{name}}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
@@ -70,7 +75,7 @@
       app
       clipped-left
     >
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
+      <v-app-bar-nav-icon @click.stop="onClick()" />
       <router-link :to="{path: '/'}">
         <v-toolbar-title>{{title}}</v-toolbar-title>
       </router-link>
@@ -89,31 +94,64 @@
 </template>
 
 <script>
-
+import {getImageURL} from './plugins/utils'
   export default {
     props: {
       source: String,
       test:String
     },
     data: () => ({
-      drawer: null,
+      drawer: false,
+      isOpening: false,
       title: "",
-      footer:"",
+      footer:"© 2020 Cellard Fabien",
       name:"",
-      socials:[]
+      socials:[],
+      profilePic:""
     }),
     methods:{
+      getImageURL,
+      onClick()
+      {
+        this.drawer = !this.drawer;
+        this.isOpening = true;
+      },
+      onTransitioned()
+      {
+        if(!this.isLargeViewport)
+        {
+          if(this.isOpening)
+          {
+            this.isOpening = false;
+          }
+          else
+          {
+            this.drawer = false;
+          }
+        }
+      },
       retrieveDataFromState: function (state)
       {
         this.title = state.portfolio.title;
         this.footer = state.portfolio.footer;
         this.name = state.portfolio.name;
         this.socials = state.portfolio.socials;
+        this.profilePic = state.portfolio.profilePic;
+      }
+    },  
+    computed:
+    {
+      isLargeViewport() {
+        return this.$vuetify.breakpoint.name == 'lg';
+      },
+      mini()
+      {
+        return this.isLargeViewport && !this.drawer
       }
     },
     created () {
       this.$vuetify.theme.dark = true;
-      this.drawer = false;
+      this.drawer = this.isLargeViewport;
 
       //If the data is in the store retrieves it 
       if(this.$store.state.portfolio)
@@ -130,6 +168,15 @@
           }
         },this);
       }
+    },
+    watch: {
+      isLargeViewport : function(newVal)
+      {
+        if(!newVal)
+        {
+          this.drawer = false;
+        }
+      }
     }
   }
 </script>
@@ -141,5 +188,17 @@
     text-decoration: none;
     color:white
   }
+}
+
+.miniAvatar
+{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 8px !important;
+}
+
+.miniAvatarText
+{
+  margin-left: 0.5rem;
 }
 </style>
