@@ -60,7 +60,7 @@ export default {
     getImageURL,
     retrieveDataFromState: function (state)
     {
-      this.profilePicUrl = state.portfolio.about.profilePic;
+      this.profilePicUrl = state.portfolio.profilePic;
       this.description = state.portfolio.about.description;
       this.name = state.portfolio.name;
       this.phoneNumber = state.portfolio.about.phoneNumber;
