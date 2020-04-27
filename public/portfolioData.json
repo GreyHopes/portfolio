@@ -6,7 +6,7 @@
     "profilePic":"/profilepic.png",
     "main":{
         "title":"Fabien Cellard",
-        "subtitle":"I'm a junior developper. ",
+        "subtitle":"I'm a junior developper. I love making games and writing stories.",
         "bgUrl":"/background.jpg"
     },
     "socials":
@@ -20,7 +20,7 @@
       }
     ],
     "about":{
-        "description":"Hi! I'm a french developer from Lyon. I'm currently doing a masters degree in Computer Science at UQAC (Chicoutmi QC, Canada) specialized in video games in patnership with Polytech Lyon.",
+        "description":"Hi! I'm a french developer from **Lyon**. I'm currently doing a masters degree in Computer Science at **UQAC** (Chicoutmi QC, Canada) specialized in video games in collaboration with my engineer's degree at **Polytech Lyon**.",
         "email": "fabien.cellard@gmail.com",
         "phoneNumber": "418-376-8961",
         "address":{
@@ -32,24 +32,62 @@
           }
     },
     "projects":[
-        {
-            "title": "Project 1",
-            "subtitle": "A software development project",
-            "smallDescription": "Small description of the project",
-            "imageUrl":"/background.jpg",
-            "content":{
-                "mdUrl":"project1.md"
-            }
-        },
-        {
-            "title": "Project 2",
-            "subtitle": "Another software development project",
-            "smallDescription": "Small description of the project",
-            "imageUrl":"https://cdn.vuetifyjs.com/images/cards/sunshine.jpg",
-            "content":{
-                "text":"This is my project"
-            }
+      {
+        "title": "And",
+        "subtitle": "LaboJeu",
+        "imageUrl":"/portfolio/temp.png",
+        "content":{
+            "text":"Coming soon..."
         }
+      },
+      {
+        "title": "Vue portfolio template",
+        "subtitle": "A portfolio template made with VueJS",
+        "imageUrl":"/portfolio/temp.png",
+        "content":{
+            "text":"Coming soon..."
+        }
+      },
+      {
+          "title": "Winter WonderJam 2020 : Grannyies War",
+          "subtitle": "A game made for the Winter edition of Wonderjam 2020 in 48 hours in a team of 6.",
+          "imageUrl":"/portfolio/wonderjam2020.png",
+          "content":{
+              "mdUrl":"wonderjam2020.md"
+          }
+      },
+      {
+        "title": "Fall WonderJam 2019 : Space League",
+        "subtitle": "A game made for the Winter edition of Wonderjam 2020 in 48 hours in a team of 6.",
+        "imageUrl":"/portfolio/wonderjam2019.png",
+        "content":{
+            "mdUrl":"wonderjam2019.md"
+        }
+      },
+      {
+        "title": "Timesick",
+        "subtitle": "Game made in a team of 4 for the 8INF960 class at UQAC",
+        "imageUrl":"/portfolio/timesick.png",
+        "content":{
+            "mdUrl":"timesick.md"
+        }
+      },
+      {
+        "title": "Unreal Network Game",
+        "subtitle": "Game made with Unreal to tinker with its networking features.",
+        "imageUrl":"/portfolio/unrealnetwork.png",
+        "content":{
+            "mdUrl":"unrealnetwork.md"
+        }
+      },
+      {
+        "title": "Promovols",
+        "subtitle": "Travel selling site I worked during an internship at Travelys / Speedmedia.",
+        "imageUrl":"/portfolio/promovols.png",
+        "content":{
+            "mdUrl":"promovols.md"
+        }
+      }
     ],
     "resume":{
         "education":[
