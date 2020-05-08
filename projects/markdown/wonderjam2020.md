@@ -6,4 +6,4 @@ It's a local multiplayer game in which the players are playing as neighboring gr
 
 I worked on UI and Gameplay elements, in particular the button smash mechanic and the delivery system.
 
-You can get the game on [itch.io](https://maevatrivino.itch.io/grannies-war).
+[![itch.io](https://img.shields.io/badge/Get%20on-Itch.Io-red?style=for-the-badge&logo=itch.io)](https://maevatrivino.itch.io/grannies-war)

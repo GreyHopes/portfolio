@@ -33,19 +33,19 @@
     },
     "projects":[
       {
-        "title": "And",
+        "title": "Ånd",
         "subtitle": "LaboJeu",
-        "imageUrl":"/portfolio/temp.png",
+        "imageUrl":"/portfolio/and.png",
         "content":{
-            "text":"Coming soon..."
+            "mdUrl":"and.md"
         }
       },
       {
         "title": "Vue portfolio template",
         "subtitle": "A portfolio template made with VueJS",
-        "imageUrl":"/portfolio/temp.png",
+        "imageUrl":"/portfolio/vueportfolio.png",
         "content":{
-            "text":"Coming soon..."
+            "mdUrl":"vueportfolio.md"
         }
       },
       {
