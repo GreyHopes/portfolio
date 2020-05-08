@@ -4,4 +4,4 @@ The goal is to defend a space station from waves of enemies using spaceships tha
 
 I made most of the UIs of the game and the upgrade system.
 
-You can get the game on [itch.io](https://cawotte.itch.io/space-league-wonderjam).
+[![itch.io](https://img.shields.io/badge/Get%20on-Itch.Io-red?style=for-the-badge&logo=itch.io)](https://cawotte.itch.io/space-league-wonderjam)
