@@ -34,7 +34,7 @@
     "projects":[
       {
         "title": "Ånd",
-        "subtitle": "LaboJeu",
+        "subtitle": "A first-person puzzle game made with a team of 8 using the Unreal Engine.",
         "imageUrl":"/portfolio/and.png",
         "content":{
             "mdUrl":"and.md"
