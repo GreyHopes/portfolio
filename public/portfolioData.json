@@ -22,13 +22,13 @@
     "about":{
         "description":"Hi! I'm a french developer from **Lyon**. I'm currently doing a masters degree in Computer Science at **UQAC** (Chicoutmi QC, Canada) specialized in video games in collaboration with my engineer's degree at **Polytech Lyon**.",
         "email": "fabien.cellard@gmail.com",
-        "phoneNumber": "418-376-8961",
+        "phoneNumber": "0786531604",
         "address":{
-            "street":"78-106 rue Dubé,",
-            "city":"Chicoutimi",
-            "state":"QC",
-            "country":"CANADA",
-            "zip": "G7H2V2"
+            "street":"",
+            "city":"Lyon",
+            "state":"",
+            "country":"France",
+            "zip": ""
           }
     },
     "projects":[
@@ -105,17 +105,17 @@
             }
         ],
         "works":[
-            {
-                "company":"Travelys / SpeedMedia",
-                "title":"Intern Fullstack Developper",
-                "dates":"September 2018 - February 2019",
-                "description":"During my internship I worked on the maintenance of Travelys' website. I also worked on different internal projects and Promovol's first website."
-            },
 			{
                 "company":"Eden Games",
                 "title":"Intern Gameplay Programmer",
                 "dates":"August 2020 - February 2021",
                 "description":""
+            },
+            {
+                "company":"Travelys / SpeedMedia",
+                "title":"Intern Fullstack Developper",
+                "dates":"September 2018 - February 2019",
+                "description":"During my internship I worked on the maintenance of Travelys' website. I also worked on different internal projects and Promovol's first website."
             }
         ],
         "skills":[
