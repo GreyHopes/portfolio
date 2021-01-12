@@ -1,149 +1,159 @@
 {
-    "title":"Portfolio",
-    "name":"Fabien Cellard",
-    "resumeUrl":"https://greyhopes.github.io/portfolio/resume.pdf",
-    "footer":"© 2020 Cellard Fabien",
-    "profilePic":"/profilepic.png",
-    "main":{
-        "title":"Fabien Cellard",
-        "subtitle":"I'm a junior developper. I love making games and writing stories.",
-        "bgUrl":"/background.jpg"
-    },
-    "socials":
-    [{
-        "name":"github",
-        "url":"http://github.com/GreyHopes"
-      },
-      {
-        "name":"web",
-        "url":"https://greyhopes.github.io/portfolio"
-      }
-    ],
-    "about":{
-        "description":"Hi! I'm a french developer from **Lyon**. I'm currently doing a masters degree in Computer Science at **UQAC** (Chicoutmi QC, Canada) specialized in video games in collaboration with my engineer's degree at **Polytech Lyon**.",
-        "email": "fabien.cellard@gmail.com",
-        "phoneNumber": "0786531604",
-        "address":{
-            "street":"",
-            "city":"Lyon",
-            "state":"",
-            "country":"France",
-            "zip": ""
-          }
-    },
-    "projects":[
-      {
-        "title": "Ånd",
-        "subtitle": "A first-person puzzle game made with a team of 8 using the Unreal Engine.",
-        "imageUrl":"/portfolio/and.png",
-        "content":{
-            "mdUrl":"and.md"
-        }
-      },
-      {
-        "title": "Vue portfolio template",
-        "subtitle": "A portfolio template made with VueJS",
-        "imageUrl":"/portfolio/vueportfolio.png",
-        "content":{
-            "mdUrl":"vueportfolio.md"
-        }
-      },
-      {
-          "title": "Winter WonderJam 2020 : Grannyies War",
-          "subtitle": "A game made for the Winter edition of Wonderjam 2020 in 48 hours in a team of 6.",
-          "imageUrl":"/portfolio/wonderjam2020.png",
-          "content":{
-              "mdUrl":"wonderjam2020.md"
-          }
-      },
-      {
-        "title": "Fall WonderJam 2019 : Space League",
-        "subtitle": "A game made for the Winter edition of Wonderjam 2020 in 48 hours in a team of 6.",
-        "imageUrl":"/portfolio/wonderjam2019.png",
-        "content":{
-            "mdUrl":"wonderjam2019.md"
-        }
-      },
-      {
-        "title": "Timesick",
-        "subtitle": "Game made in a team of 4 for the 8INF960 class at UQAC",
-        "imageUrl":"/portfolio/timesick.png",
-        "content":{
-            "mdUrl":"timesick.md"
-        }
-      },
-      {
-        "title": "Unreal Network Game",
-        "subtitle": "Game made with Unreal to tinker with its networking features.",
-        "imageUrl":"/portfolio/unrealnetwork.png",
-        "content":{
-            "mdUrl":"unrealnetwork.md"
-        }
-      },
-      {
-        "title": "Promovols",
-        "subtitle": "Travel selling site I worked during an internship at Travelys / Speedmedia.",
-        "imageUrl":"/portfolio/promovols.png",
-        "content":{
-            "mdUrl":"promovols.md"
-        }
-      }
-    ],
-    "resume":{
-        "education":[
-            {
-              "school":"Université du Québec à Chicoutimi",
-              "degree":"Computer Science Master - Video Games specialization",
-              "dates":"September 2019 - Today",
-              "description":""
-            },
-            {
-              "school":"Polytech Lyon",
-              "degree":"Computer Science Engineering Degree",
-              "dates":"September 2015 - August 2019",
-              "description":""
-            }
-        ],
-        "works":[
+	"title": "Portfolio",
+	"name": "Fabien Cellard",
+	"resumeUrl": "https://greyhopes.github.io/portfolio/resume.pdf",
+	"footer": "© 2020 Cellard Fabien",
+	"profilePic": "/profilepic.png",
+	"main": {
+		"title": "Fabien Cellard",
+		"subtitle": "I'm a junior developer. I love making games and writing stories.",
+		"bgUrl": "/background.jpg"
+	},
+	"socials": [
+		{
+			"name": "github",
+			"url": "http://github.com/GreyHopes"
+		},
+		{
+			"name": "web",
+			"url": "https://greyhopes.github.io/portfolio"
+		}
+	],
+	"about": {
+		"description": "Hi! I'm a french developer from **Lyon**. I'm currently doing a masters degree in Computer Science at **UQAC** (Chicoutmi QC, Canada) specialized in video games in collaboration with my engineer's degree at **Polytech Lyon**.",
+		"email": "fabien.cellard@gmail.com",
+		"phoneNumber": "0786531604",
+		"address": {
+			"street": "",
+			"city": "Lyon",
+			"state": "",
+			"country": "France",
+			"zip": ""
+		}
+	},
+	"projects": [
+		{
+			"title": "Ånd",
+			"subtitle": "A first-person puzzle game made with a team of 8 using the Unreal Engine.",
+			"imageUrl": "/portfolio/and.png",
+			"content": {
+				"mdUrl": "and.md"
+			}
+		},
+		{
+			"title": "Vue portfolio template",
+			"subtitle": "A portfolio template made with VueJS",
+			"imageUrl": "/portfolio/vueportfolio.png",
+			"content": {
+				"mdUrl": "vueportfolio.md"
+			}
+		},
+		{
+			"title": "Winter WonderJam 2020 : Grannyies War",
+			"subtitle": "A game made for the Winter edition of Wonderjam 2020 in 48 hours in a team of 6.",
+			"imageUrl": "/portfolio/wonderjam2020.png",
+			"content": {
+				"mdUrl": "wonderjam2020.md"
+			}
+		},
+		{
+			"title": "Fall WonderJam 2019 : Space League",
+			"subtitle": "A game made for the Winter edition of Wonderjam 2020 in 48 hours in a team of 6.",
+			"imageUrl": "/portfolio/wonderjam2019.png",
+			"content": {
+				"mdUrl": "wonderjam2019.md"
+			}
+		},
+		{
+			"title": "Timesick",
+			"subtitle": "Game made in a team of 4 for the 8INF960 class at UQAC",
+			"imageUrl": "/portfolio/timesick.png",
+			"content": {
+				"mdUrl": "timesick.md"
+			}
+		},
+		{
+			"title": "Unreal Network Game",
+			"subtitle": "Game made with Unreal to tinker with its networking features.",
+			"imageUrl": "/portfolio/unrealnetwork.png",
+			"content": {
+				"mdUrl": "unrealnetwork.md"
+			}
+		},
+		{
+			"title": "Promovols",
+			"subtitle": "Travel selling site I worked during an internship at Travelys / Speedmedia.",
+			"imageUrl": "/portfolio/promovols.png",
+			"content": {
+				"mdUrl": "promovols.md"
+			}
+		}
+	],
+	"resume": {
+		"education": [
 			{
-                "company":"Eden Games",
-                "title":"Intern Gameplay Programmer",
-                "dates":"August 2020 - February 2021",
-                "description":""
-            },
-            {
-                "company":"Travelys / SpeedMedia",
-                "title":"Intern Fullstack Developper",
-                "dates":"September 2018 - February 2019",
-                "description":"During my internship I worked on the maintenance of Travelys' website. I also worked on different internal projects and Promovol's first website."
-            }
-        ],
-        "skills":[
-            {
-              "name":"Unreal Engine",
-              "level":"65%",
-              "icon":"unreal"
-            },
-            {
-              "name":"Unity",
-              "level":"70%",
-              "icon":"unity"
-            },
-            {
-              "name":"",
-              "level":"75%",
-              "icon":"language-cpp"
-            },
-            {
-              "name":"",
-              "level":"75%",
-              "icon":"language-csharp"
-            },
-            {
-              "name":"Android",
-              "level":"60%",
-              "icon":"android"
-            }
-        ]
-    }
+				"school": "Université du Québec à Chicoutimi",
+				"degree": "Computer Science Master - Video Games specialization",
+				"dates": "September 2019 - Today",
+				"description": ""
+			},
+			{
+				"school": "Polytech Lyon",
+				"degree": "Computer Science Engineering Degree",
+				"dates": "September 2015 - August 2019",
+				"description": ""
+			}
+		],
+		"works": [
+			{
+				"company": "Eden Games",
+				"title": "Intern Gameplay Programmer",
+				"dates": "August 2020 - February 2021",
+				"description": "Worked on mobile racing games. Had to design a camera system to spectate a race live or from a replay. I also made an objective system to support things such as missions and achievements with some server side code."
+			},
+			{
+				"company": "Travelys / SpeedMedia",
+				"title": "Intern Fullstack Developper",
+				"dates": "September 2018 - February 2019",
+				"description": "During my internship I worked on the maintenance of Travelys' website. I also worked on different internal projects and Promovol's first website."
+			}
+		],
+		"skills": [
+			{
+				"name": "Unreal Engine",
+				"level": "80%",
+				"icon": "unreal"
+			},
+			{
+				"name": "Unity",
+				"level": "85%",
+				"icon": "unity"
+			},
+			{
+				"name": "",
+				"level": "85%",
+				"icon": "language-cpp"
+			},
+			{
+				"name": "",
+				"level": "90%",
+				"icon": "language-csharp"
+			},
+			{
+				"name": "Java",
+				"level": "85%",
+				"icon": "language-java"
+			},
+			{
+				"name": "SQL Databases",
+				"level": "85%",
+				"icon": "database"
+			},
+			{
+				"name": "Android",
+				"level": "60%",
+				"icon": "android"
+			}
+		]
+	}
 }
