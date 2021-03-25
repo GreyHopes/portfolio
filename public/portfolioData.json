@@ -2,11 +2,11 @@
 	"title": "Portfolio",
 	"name": "Fabien Cellard",
 	"resumeUrl": "https://greyhopes.github.io/portfolio/resume.pdf",
-	"footer": "© 2020 Cellard Fabien",
+	"footer": "© 2021 Cellard Fabien",
 	"profilePic": "/profilepic.png",
 	"main": {
 		"title": "Fabien Cellard",
-		"subtitle": "I'm a junior developer. I love making games and writing stories.",
+		"subtitle": "I'm a junior game developer. I love making games and creating new experiences.",
 		"bgUrl": "/background.jpg"
 	},
 	"socials": [
@@ -15,12 +15,16 @@
 			"url": "http://github.com/GreyHopes"
 		},
 		{
+			"name": "linkedin",
+			"url": "https://www.linkedin.com/in/fabien-cellard-a21268172/"
+		},
+		{
 			"name": "web",
 			"url": "https://greyhopes.github.io/portfolio"
 		}
 	],
 	"about": {
-		"description": "Hi! I'm a french developer from **Lyon**. I'm currently doing a masters degree in Computer Science at **UQAC** (Chicoutmi QC, Canada) specialized in video games in collaboration with my engineer's degree at **Polytech Lyon**.",
+		"description": "Hi! I'm a french developer from **Lyon**. I'm currently working at Eden Games as a gameplay programmer. My main specialties are gameplay programming, game-oriented network programming and web development. I have a masters degree in Computer Science with the video games specialization from **UQAC** (Chicoutmi QC, Canada)  and an engineer's degree in Computer Science from **Polytech Lyon** (Lyon, France).",
 		"email": "fabien.cellard@gmail.com",
 		"phoneNumber": "0786531604",
 		"address": {
@@ -58,7 +62,7 @@
 		},
 		{
 			"title": "Fall WonderJam 2019 : Space League",
-			"subtitle": "A game made for the Winter edition of Wonderjam 2020 in 48 hours in a team of 6.",
+			"subtitle": "A game made for the Autumn edition of Wonderjam 2019 in 48 hours in a team of 5.",
 			"imageUrl": "/portfolio/wonderjam2019.png",
 			"content": {
 				"mdUrl": "wonderjam2019.md"
@@ -74,7 +78,7 @@
 		},
 		{
 			"title": "Unreal Network Game",
-			"subtitle": "Game made with Unreal to tinker with its networking features.",
+			"subtitle": "Game made with Unreal to tinker and explore its networking features.",
 			"imageUrl": "/portfolio/unrealnetwork.png",
 			"content": {
 				"mdUrl": "unrealnetwork.md"
@@ -94,17 +98,23 @@
 			{
 				"school": "Université du Québec à Chicoutimi",
 				"degree": "Computer Science Master - Video Games specialization",
-				"dates": "September 2019 - Today",
+				"dates": "September 2019 - February 2021",
 				"description": ""
 			},
 			{
 				"school": "Polytech Lyon",
 				"degree": "Computer Science Engineering Degree",
-				"dates": "September 2015 - August 2019",
+				"dates": "September 2015 - March 2021",
 				"description": ""
 			}
 		],
 		"works": [
+			{
+				"company": "Eden Games",
+				"title": "Gameplay Programmer",
+				"dates": "February 2021 - Today",
+				"description": "Worked on mobile racing games."
+			},
 			{
 				"company": "Eden Games",
 				"title": "Intern Gameplay Programmer",
