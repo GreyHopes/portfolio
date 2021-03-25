@@ -16,7 +16,7 @@
             <h1>{{title}}</h1>
         </v-row>
 
-        <v-row class="content-row">
+        <v-row class="content-row" justify="center">
             <VueShowdown v-if="isMarkdown" :markdown="content"></VueShowdown>
             <div v-else>{{content}}</div>
         </v-row>

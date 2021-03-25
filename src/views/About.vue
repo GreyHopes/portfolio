@@ -11,11 +11,11 @@
         <v-col cols="12" md="9" align-self="center">
           <v-container>
 
-            <v-row class="title">About Me :</v-row>
+            <v-row class="title"><span class="my-3"><v-icon class="mr-2">mdi-tooltip-account</v-icon>About Me :</span></v-row>
             <v-row class="description"><VueShowdown :markdown="description"></VueShowdown></v-row>
             <v-row class="">
                 <v-col cols="12" md="6" class="contact-details">
-                  <v-row class="title">Contact Details</v-row>
+                  <v-row class="title"><span class="my-3"><v-icon class="mr-2">mdi-email</v-icon> Contact Details :</span></v-row>
                   <v-row class="name">{{name}}</v-row>
                   <v-row class="adress-main">{{adressMain}}</v-row>
                   <v-row class="adress-second">{{adressSecond}}</v-row>
@@ -130,6 +130,13 @@ export default {
     display: block;
     margin: auto;
     border-radius: 100%
+  }
+
+  .title
+  {
+	span{
+      border-bottom: 3px solid white;
+    }
   }
 }
 </style>

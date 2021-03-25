@@ -81,10 +81,10 @@
       </router-link>
     </v-app-bar>
 
-    <v-content>
+    <v-main>
       <!-- The route component will be injected here -->
       <router-view></router-view>
-    </v-content>
+    </v-main>
 
     <v-footer app>
       <v-row justify="center"><span>{{footer}}</span></v-row>
