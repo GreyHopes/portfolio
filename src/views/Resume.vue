@@ -76,6 +76,11 @@ export default {
 <style lang="scss">
 .resume
 {
+  .title
+  {
+    margin-top:1rem;
+  }
+
   @media(min-width: 993px)
   {
       .title
