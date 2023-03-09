@@ -37,6 +37,22 @@
 	},
 	"projects": [
 		{
+			"title": "Gear.Club Stradale",
+			"subtitle": "A racing game for the Arcade running on iOs, TvOs and MacOs.",
+			"imageUrl": "/portfolio/gca.png",
+			"content": {
+				"mdUrl": "gca.md"
+			}
+		},
+		{
+			"title": "F1 Mobile Racing",
+			"subtitle": "Worked on the challenge system during my intership at Eden Games.",
+			"imageUrl": "/portfolio/f1mobile.png",
+			"content": {
+				"mdUrl": "f1mobile.md"
+			}
+		},
+		{
 			"title": "Ånd",
 			"subtitle": "A first-person puzzle game made with a team of 8 using the Unreal Engine.",
 			"imageUrl": "/portfolio/and.png",
@@ -113,7 +129,7 @@
 				"company": "Eden Games",
 				"title": "Gameplay Programmer",
 				"dates": "February 2021 - Today",
-				"description": "Worked on mobile racing games."
+				"description": "Worked on F1 Mobile Racing as a Programmer, Gear.Club:Stradale for Apple Arcade as a Technical Referent and other in-house projects."
 			},
 			{
 				"company": "Eden Games",
@@ -131,22 +147,22 @@
 		"skills": [
 			{
 				"name": "Unreal Engine",
-				"level": "80%",
+				"level": "70%",
 				"icon": "unreal"
 			},
 			{
 				"name": "Unity",
-				"level": "85%",
+				"level": "95%",
 				"icon": "unity"
 			},
 			{
 				"name": "",
-				"level": "85%",
+				"level": "75%",
 				"icon": "language-cpp"
 			},
 			{
 				"name": "",
-				"level": "90%",
+				"level": "95%",
 				"icon": "language-csharp"
 			},
 			{
@@ -163,6 +179,11 @@
 				"name": "Android",
 				"level": "60%",
 				"icon": "android"
+			},
+			{
+				"name": "Apple devices",
+				"level": "60%",
+				"icon": "apple"
 			}
 		]
 	}

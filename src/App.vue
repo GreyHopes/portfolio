@@ -190,6 +190,11 @@ import {getImageURL} from './plugins/utils'
   }
 }
 
+.v-footer
+{
+  padding: 16px;
+}
+
 .miniAvatar
 {
   margin-top: 0.5rem;
