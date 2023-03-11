@@ -24,7 +24,7 @@
 		}
 	],
 	"about": {
-		"description": "Hi! I'm a french developer from **Lyon**. I'm currently working at Eden Games as a gameplay programmer. My main specialties are gameplay programming, game-oriented network programming and web development. I have a masters degree in Computer Science with the video games specialization from **UQAC** (Chicoutmi QC, Canada)  and an engineer's degree in Computer Science from **Polytech Lyon** (Lyon, France).",
+		"description": "Hi! I'm a french developer from **Lyon**. I'm currently working at Eden Games as a gameplay programmer and associate lead programmer. My main specialties are gameplay programming, game-oriented network programming and web development. I have a masters degree in Computer Science with the video games specialization from **UQAC** (Chicoutmi QC, Canada)  and an engineer's degree in Computer Science from **Polytech Lyon** (Lyon, France).",
 		"email": "fabien.cellard@gmail.com",
 		"phoneNumber": "0786531604",
 		"address": {
@@ -129,7 +129,7 @@
 				"company": "Eden Games",
 				"title": "Gameplay Programmer",
 				"dates": "February 2021 - Today",
-				"description": "Worked on F1 Mobile Racing as a Programmer, Gear.Club:Stradale for Apple Arcade as a Technical Referent and other in-house projects."
+				"description": "Worked on F1 Mobile Racing as a Gameplay Programmer, Gear.Club:Stradale for Apple Arcade as an Associate Lead programmer and other in-house projects."
 			},
 			{
 				"company": "Eden Games",
